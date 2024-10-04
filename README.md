@@ -30,13 +30,25 @@ This tool automates the process of scraping messages, images, and metadata from 
    pip install -r requirements.txt
    ```
 
-3. **Set up your Chrome profile** to avoid scanning the WhatsApp QR code each time:
+3. Configuring the `.env` File
+
+You can store configuration variables such as the group chat name, Chrome profile path, and the oldest message date at which you want to scrape in a `.env` file to keep your settings separate from the code.
+
+1. **Create a `.env` file** in the project root with the following content:
+
+   ```plaintext
+    GROUP_CHAT_NAME="family group ❤️"
+    CHROME_PROFILE="/Users/johndoe/Library/Application Support/Google/Chrome/Profile 2"
+    OLDEST_MESSAGE="[08:15, 01/01/2023]"
+   ```
+
+2. **Set up your Chrome profile** to avoid scanning the WhatsApp QR code each time:
 
    - Log into WhatsApp Web manually in Chrome.
    - Locate your Chrome profile path (usually under `~/.config/google-chrome/` or `C:\Users\<username>\AppData\Local\Google\Chrome\User Data`).
    - Specify your Chrome profile in the .env to reuse the session.
 
-4. **Run the script**:
+3. **Run the script**:
 
    ```bash
    python whatsapp_scraper.py
