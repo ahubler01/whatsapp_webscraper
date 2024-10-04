@@ -72,10 +72,6 @@ This tool automates the process of scraping messages, images, and metadata from 
 ]
 ```
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contribution
 
 Feel free to submit pull requests or issues for improvements or bug fixes. Contributions are always welcome!
