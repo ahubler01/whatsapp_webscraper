@@ -51,7 +51,7 @@ You can store configuration variables such as the group chat name, Chrome profil
 3. **Run the script**:
 
    ```bash
-   python whatsapp_scraper.py
+   python src/whatsapp_scraper.py
    ```
 
 ## Usage
